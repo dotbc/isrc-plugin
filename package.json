@@ -1,0 +1,31 @@
+{
+  "name": "isrc",
+  "displayName": "ISRC",
+  "version": "0.0.0",
+  "description": "example ISRC plugin for dotBC",
+  "publisher": "dotBC",
+  "main": "index.js",
+  "capabilities": {
+    "search": {
+      "name": "ISRC",
+      "description": "Look up artists on ISRC.",
+      "imageUrl": "public/images/icon-isrc.png",
+      "searchImageUrl": "public/images/icon-isrc-search.png",
+      "supportedSearchTypes": [
+        "artist",
+        "work"
+      ],
+      "commands": [
+        "search",
+        "getDetails"
+      ]
+    }
+  },
+  "author": "hi@iammattwalters",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "lodash": "^4.15.0",
+    "superagent": "^2.2.0"
+  }
+}
